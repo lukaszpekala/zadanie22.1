@@ -6,7 +6,7 @@
     <title>Formularz kontaktowy</title>
 </head>
 <body>
-<form action="/send" method="post" th:object="${message}" layout:fragment="content">
+<form th:action="@{/send}" method="post" th:object="${message}" layout:fragment="content">
     <div class="mb-3">
         <label for="name" class="form-label" >Imię</label>
         <input type="text" class="form-control" id="name" placeholder="Adam" th:field="*{name}">
